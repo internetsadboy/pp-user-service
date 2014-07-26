@@ -1,0 +1,20 @@
+{
+  "middleware": {
+    "method-override": {
+      "enabled": true,
+      "priority": 95,
+      "module": {
+        "name": "method-override",
+        "arguments": ["X-HTTP-Method-Override"]
+      }
+    },
+    "appsec": {
+      "enabled": false
+    },
+    "router": {
+      "module": {
+        "arguments": [{"directory": "path:./routes"}]
+      }
+    }
+  }
+}
